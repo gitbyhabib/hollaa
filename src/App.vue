@@ -12,6 +12,10 @@ import TheWelcome from './components/TheWelcome.vue'
     </div>
   </header>
 
+  <div class="text-4xl font-bold text-center mt-10 text-blue-600">
+    🎉 Tailwind is Working!
+  </div>
+
   <main>
     <TheWelcome />
   </main>
