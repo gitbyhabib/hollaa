@@ -1,9 +1,13 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
+
+import Header from "./components/Header.vue"
 </script>
 
 <template>
+
+<Header></Header>
   <header>
     <img
       alt="Vue logo"
@@ -32,6 +36,15 @@ import TheWelcome from "./components/TheWelcome.vue";
     <TheWelcome />
   </main>
 </template>
+
+<script>
+export default {
+  name: 'Home',
+  components:{
+    Header
+  }
+}
+</script>
 
 <style scoped>
 header {
