@@ -1,76 +1,41 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
-
 import Header from "./components/Header.vue"
+import Footer from "./components/Footer.vue"
 </script>
 
 <template>
 
-<Header></Header>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
+  <div class="flex flex-col min-h-screen">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+      <Header />
 
-  <button
-    class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3"
-  >
-    Submit
-  </button>
-
-  <div class="mt-10 text-center text-4xl font-bold text-blue-600">
-    🎉 Tailwind is Working!
-  </div>
 
   <main>
-    <TheWelcome />
-  </main>
-</template>
 
-<script>
-export default {
-  name: 'Home',
-  components:{
-    Header
-  }
-}
-</script>
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Welcome to Hollaa!</h1>
+          <p class="py-6">This is a simple example of a Vue.js application with a header and footer.</p>
+          <p class="py-6">You can add your own content here.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  </div>
+</template>
 
 <style scoped>
 header {
   line-height: 1.5;
-}
-
-.logo {
   display: block;
-  margin: 0 auto 2rem;
+  width: 100%;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+main {
+  display: block;
+  margin-top: 1rem; /* Adds space below the header */
+  padding: 1rem;
 }
 </style>

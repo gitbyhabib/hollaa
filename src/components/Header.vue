@@ -1,14 +1,14 @@
 <template>
-    <h1>Header</h1>
-
-
-    <div>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Board</a>
-<a href="#">mafias</a>
-<a href="#">gameplay</a>
-<a href="#">Contact Us</a>
+    <div class="sticky top-0 z-50">
+      <div class="navbar bg-base-800 p-2 shadow-sm flex ">
+  <a class="btn btn-ghost text-xl flex-1 " href="#">Home</a>
+<a class="btn btn-ghost text-xl flex-1" href="#">About</a>
+<a class="btn btn-ghost text-xl flex-1" href="#">Board</a>
+<!-- You can add or remove links as needed -->
+<a class="btn btn-ghost text-xl flex-1" href="#">Mafias</a>
+<a class="btn btn-ghost text-xl flex-1" href="#">gameplay</a>
+<a class="btn btn-ghost text-xl flex-1" href="#">Contact Us</a>
+</div>
 
     </div>
 </template>
